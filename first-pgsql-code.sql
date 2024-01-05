@@ -325,7 +325,7 @@
 -- GROUP BY authors.name;
 
 -- SELECT user_id, COUNT(*) FROM comments
--- WHERE photo_id < 51
+-- WHERE photo_id < 51 
 -- GROUP BY user_id
 -- HAVING COUNT(*) > 20;
 
@@ -333,4 +333,19 @@
 -- FROM phones
 -- GROUP BY manufacturer
 -- HAVING SUM (price * units_sold) > 2000000;
- 
+
+-- SELECT name FROM phones
+-- SORT BY price DESC
+-- LIMIT 2 
+-- OFFSET 1;
+-- (NB: Find out if limit command is taken before offset)
+
+-- SELECT manufacturer FROM phones
+-- WHERE price < 170
+-- UNION
+-- SELECT manufacturer  FROM phones
+-- GROUP BY manufacturer
+-- HAVING COUNT(*) > 2;
+
+
+  
